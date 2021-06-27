@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/* Paul-Antoine ---------- */
+
+/* téléphone */
+@media (max-width:585px){
+  h3 {
+    margin-top : 2rem;
+    margin-bottom: -1rem;
+    /* background-color: yellowgreen; */
+  }
+
+  .caroussel .centrer {
+    font-size: 1.5rem;
+  }
+
+  .grilleFiche .fiche {
+    margin-top: 2rem;
+    
+    min-width: 24rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 23rem;
+  }
+
+  .grilleFiche   .fiche:last-child{
+    padding: 0 0 2rem 0;
+    margin-left: 0rem;
+  }
+
+  .aidez-nous .grille article {
+  margin-right:6rem;
+  }
+
+  .grille .rabais{
+    margin-top: 2rem;
+  }
+
+  footer > div > section:nth-child(2) {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  footer > div > section > h2 {
+    border: none;
+  }
+}
+
+/* tablette */
+@media (min-width:585px){
+  h3 {
+    margin-top : 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .caroussel .centrer {
+    font-size: 2rem;
+  }
+  
+  .grille article {
+    margin-right: 3rem;
+  }
+
+  .grilleFiche  .fiche {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    min-width: 24rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 23rem;
+  }
+
+  .grille .rabais:last-child {
+    margin-top: 2rem;
+  }
+
+  .aidez-nous .grille article {
+    margin-right: 6rem;
+  }  
+  
+  .montreal article {
+      flex-basis: calc(100% / 2 - 2rem);
+      margin-right: 2rem;
+      margin-top: 0.5rem;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      min-width: 23rem;
+      flex-grow: 1;
+  }
+}
+
+/* petit ecran ordi */
+@media (min-width:900px){
+  .caroussel .centrer {
+    font-size: 2.5rem;
+  }
+
+  .activites > .grille > *,
+  .membre > .grille > *,
+  .ensavoir-plus > .grille > *,
+  .aidez-nous > .grille > *,
+  .envedette > .grille > *,
+  .recherche > .grille > * {
+    flex-basis: calc(50%  - 3rem);
+    margin-right: 2rem;
+    margin-top: 0rem;
+  }
+
+  .grille > * {
+    flex-basis: calc(100% / 2 - 2rem);
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    flex-grow: 1;
+  }
+
+  .grilleFiche  .fiche {
+    flex-basis: calc(100% / 3 - 2rem);
+    margin-right: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 33.33%;
+  }
+
+  .grille .rabais:last-child {
+    margin-top: 2rem;
+  }
+
+  .aidez-nous .grille article {
+    margin-right: 3rem;
+  }
+
+  .montreal article {
+    flex-basis: calc(100% / 2 - 2rem);
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+}
+
+/* gros ecran ordi */
+@media (min-width:1200px){
+  .caroussel .centrer {
+    font-size: 2.5rem;
+  }
+
+  .membre > .grille > *,
+  .ensavoir-plus > .grille > *,
+  .aidez-nous > .grille > *,
+  .envedette > .grille > *,
+  .recherche > .grille > * {
+    flex-basis: calc(100% / 3 - 3rem);
+  }
+
+  body > main > section,
+  body > header > div,
+  body > footer > div {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grilleFiche .fiche {
+    flex-basis: calc(100% / 3 - 2rem);
+    margin-right: 2rem;
+    margin-top: 2rem;
+    max-width: 33.33%;
+  }
+
+  .grilleFiche .fiche:last-child{
+    margin-left: 0rem;
+  }
+
+  .grille .rabais:last-child {
+    margin-top: 0rem;
+  }
+
+  .aidez-nous .grille article {
+    margin-right: 2rem;
+  }
+  .aidez-nous .grille article {
+    margin-right: 3rem;
+  }
+}
+
+/* Danny Trépanier --------------- */
+
+@media (max-width: 1325px) {
+  body > header {
+    display: none;
+  }
+
+  .logo {
+    font-size: 33px;
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .bouton-menu {
+    display: block;
+  }
+
+  #click:checked ~ .bouton-menu i:before {
+    content: "\f00d";
+  }
+
+  nav ul {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  section {
+    width: 100%;
+  }
+  .grilleFiche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  body > footer > div {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+
+/* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */

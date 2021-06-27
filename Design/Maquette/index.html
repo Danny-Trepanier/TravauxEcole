@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Paul-Antoine Gauvreau et Danny Trépanier">
+        <meta name="description" content="Site web du zoo de Val-Jalbert">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/compositon.css" />
+        <link rel="stylesheet" href="assets/css/estetique.css" />
+        <link rel="stylesheet" href="assets/css/media.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;500;700&family=Hind:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>Bievenue au zoo de Val-Jalbert</title>
+        <!-- PaulAntoine et Danny modification sur la structure html -->
+    </head>
+    <body>
+    
+    <!-- Barre de navigation -->
+    <header>
+        <h1><a href="">Le zoo de Val-Jalbert</a></h1>
+    </header>
+    <nav>
+        <div class="logo"><a href="">Le zoo de Val-Jalbert</a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="bouton-menu">
+            <span>x</span><i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">Informations</a></li>
+            <li><a href="#">Activités et événements</a></li>
+            <li><a href="#">Le monde du Zoo forestier</a></li>
+            <li><a href="#">Préservez la faune sournoise</a>
+                <ul class="sous-menu">
+                    <li><a href="#">Parrainez un animal</a></li>
+                    <li><a href="#">Notre programme éducatif</a></li>
+                    <li><a href="#">Nos initiatives de libération</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i> Achetez vos billets</a></li>
+        </ul>
+    </nav>
+
+    <!-- Début du contenu principal -->
+    <main>
+
+        <!-- Ajout d'un caroussel à la scénarisation pour attiser la curiosité -->
+        <div class="caroussel">
+            <h1 class="centrer">Le zoo forestier de Val-Jalbert : un havre sauvage d'exception</h1>
+            <img src="assets/img/havreSauvage.jpg" alt="Première image du caroussel, un enfant nourrit un chevreuil"/>
+        </div>
+
+        <!-- section de présentation des activités du zoo -->
+        <section id="activites" class="activites">
+            <h2>Nos activités</h2>
+            <div class="grilleFiche">
+                <div class="fiche">
+                    <p>
+                        Le Zoo de Val-Jalbert met en vedette les animaux québécois les
+                        plus sournois et ce, dans un décor forestier enchanteur.
+                    </p>
+                </div>
+                <div class="fiche">
+                    <p>
+                        Venez vous promener librement au milieu des lynx, carcajous et
+                        ours bruns.
+                    </p>
+                </div>
+                <div class="fiche">
+                    <a class="bouton" href="#">Voir nos activités familiales</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section carte, adresse du zoo et affirmation du caractère unique du zoo au Québec -->
+        <section id="info">
+            <h2>Unique et accessible</h2>
+            <div class="grille montreal">
+                <div>
+                    <h3>À seulement 6 heures de Montréal et 30 minutes de Chicoutimi!</h3>
+                    <img src="assets/img/montreal.jpg" alt="Image d'un lac entouré d'une forêt"/>
+                </div>
+                <div>
+                    <h3>Le seul Zoo en forêt du Québec.</h3>
+                    <img src="assets/img/zooForet.jpg" alt="Image d'une forêt"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- section info complémentaire sur le zoo et articles à lire -->
+        <section class="ensavoir-plus">
+            <h2>Apprenez-en plus sur le zoo et Val-Jalbert!</h2>
+            <div class="grille">
+                <article>
+                    <header>
+                        <h3><a href="#">Un village plein d'histoires!</a></h3>
+                    </header>
+                    <a href="#">
+                        <img src="assets/img/village.jpg" alt="Image d'un village avec un couché de soleil"/>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui culpa voluptatem possimus animi nihil eveniet 
+                        ea facilis hic esse, impedit dolorum est sapiente excepturi modi, ex eius neque mollitia?
+                    </p>
+                    <p><i>Publié par <a href="#">John Doe</a></i></p>
+                </article>
+                <article>
+                    <header>
+                        <h3><a href="#">Le cougar, typiquement québécois!</a></h3>
+                    </header>
+                    <a href="#"><img src="assets/img/cougar2.jpg" alt="Image d'un cougar"/></a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui culpa voluptatem possimus animi nihil eveniet 
+                        ea facilis hic esse, impedit dolorum est sapiente excepturi modi, ex eius neque mollitia?
+                    </p>
+                    <p><i>Publié par <a href="#">John Doe</a></i></p>
+                </article>
+                <article>
+                    <header>
+                        <h3><a href="#">Devenez membre et recevez un écusson de votre choix!</a></h3>
+                    </header>
+                    <a href="#">
+                    <img src="assets/img/devenezMembre.jpg" alt="Image de feux d'artifices"/>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui culpa voluptatem possimus animi nihil eveniet 
+                        ea facilis hic esse, impedit dolorum est sapiente excepturi modi, ex eius neque mollitia?
+                    </p>
+                    <p><i>Publié par <a href="#">John Doe</a></i></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- section passage à l'action qui regroupe 2 sous-sections AIDER et DEVENIR MEMBRE -->
+        <section class="aide-et-membre">
+            <h2>Aidez-nous: Devenez membre!</h2>
+            <div class="grille">
+                <!-- sous-section AIDER -->
+                <section class="aidez-nous">
+                    <h3>Aidez-nous à préserver la faune québécoise et sournoise!</h3>
+                    <div class="grille">
+                        <div>
+                            <img src="assets/img/oursNoir.jpg" alt="Image d'un ours noir"/>
+                            <p>
+                                Contribuez à l’essor de l’ours noir
+                            </p>
+                        </div>
+                        <div>
+                            <img src="assets/img/survi.jpg" alt="Image d'une forêt à automne"/>
+                            <p>
+                                Participez à notre programme de survie solitaire
+                            </p>
+                        </div>
+                        <div>
+                            <img src="assets/img/caribou.jpg" alt="Image d'un caribou"/>
+                            <p>
+                                Découvrez nos initiatives de protection du caribou
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- sous-section DEVENIR MEMBRE -->
+        <section class="membre">
+            <h2>Devenez membre et économisez!</h2>
+            <div class="grille">
+                <section class="fiche rabais">
+                    <h3>Obtenez un accès privilégié et illimité pour 20 $ par année.</h3>
+                    <a class="bouton" href="#">Info</a>
+                </section>
+                <section class="fiche rabais">
+                    <h3>Devenez membre !</h3>
+                    <a class="bouton" href="#">Info</a>
+                </section>
+            </div>
+        </section> 
+    </main>
+
+    <footer>
+        <div>
+            <section class="apropos">
+                <h2>A propos</h2>
+                <div>
+                    <ul>
+                    <li><a href="#">Équipe</a></li>
+                    <li><a href="#">Partenaires</a></li>
+                    <li><a href="#">Carrières</a></li>
+                    <li><a href="#">Services aux écoles</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="dons">
+                <h2>Aidez les animaux!</h2>
+                <p>
+                    Par votre générosité, vous participez à la préservation et au
+                    bien-être de la faune sournoise!
+                </p>
+                <div class="grille">
+                    <a class="bouton" href="#">Don unique</a>
+                    <a class="bouton" href="#">Don mensuel</a>
+                    <a class="bouton" href="#">Autres méthodes</a>
+                </div>
+            </section>
+
+            <section class="infolettre">
+                <h2>Restons en contact!</h2>
+                <p>
+                    Inscrivez-vous aux courriel du Zoo de Val-Jalbert pour connaître en
+                    avance toutes nos nouveautés et profiter de rabais exceptionnels!
+                </p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="courriel">Mon courriel</label>
+                        <input type="email" id="courriel" name="courriel" />
+                    </div>
+                    <button class="bouton">Je m'abonne!</button>
+                </form>
+            </section>
+        </div>
+    </footer>
+</html>

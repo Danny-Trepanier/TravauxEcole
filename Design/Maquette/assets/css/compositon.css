@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+:root {
+  /* typographie */
+  --font-family: "Hind";
+  /* --font-text: rgb(117, 117, 117); */
+  --line-height: 1.5625;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Elèments de base */
+
+h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+h4 {
+  font-size: 1.25rem; 
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--font-title);
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  max-width: 50ch;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+}
+
+/* élèments de formulaire, boutons... */
+
+input[type="email"],
+button {
+  padding: 0.1rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* CORPS DE PAGE *****************************************/
+
+body {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+}
+
+/* restriction du contenu et centrage */
+body > main > section,
+body > header > div,
+body > footer > div {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* RYTHME VERTICAL *****************************************/
+
+
+/* Eléments de base */
+
+
+* + figure,
+* + a,
+* + p,
+* + small,
+* + button,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+select {
+  margin-top: 2rem;
+}
+
+* + div,
+* + img, 
+* + input {
+  margin-top: 1rem;
+}
+
+
+/* Espacement des sections principales */
+
+main > section {
+  margin: 8rem 0 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CLASSES UTILITAIRES ********************************/
+
+/* grille */
+
+.grille {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grilleFiche {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns {
+  columns: 2;
+}
+
+.centrer {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fiche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.05); 
+  border-radius: 2px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.fiche:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 1px 1px #D9D9D9;
+}
+
+.fiche:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 1px 1px #D9D9D9;
+}
+
+.fiche > .bouton {
+  width: 100%;
+}
+
+/* liens au format bouton SAUF les liens de la navigation principale */
+
+.bouton {
+  display: inline-block;
+  padding: 0.6rem 1rem 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  transition-duration: 100ms;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.1));
+  margin-top: 2rem;
+}
+
+a.bouton:hover,
+a:hover:not(a.logo) {
+ color:inherit;
+}
+
+.grilleFiche:last-child .bouton {
+  background-color: #FAF8F6;
+  width: 16rem;
+  margin-top:2rem;
+}
+
+.rabais .bouton {
+  margin-top : 2rem;
+}
+
+/* ELEMENTS COMMUNS A TOUTES LES PAGES ****************/
+
+.activites > .grille > *,
+.membre > .grille > *,
+.ensavoir-plus > .grille > *,
+.aidez-nous > .grille > *,
+.envedette > .grille > *,
+.recherche > .grille > *,
+section.membre,
+footer > div > form,
+footer .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.recherche > .grille > * > img {
+  height: 8rem;
+}
+
+/* ENTÊTE  ***********************************************/
+
+body > header {
+  min-height: 10vh;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+body > header > h1 {
+  line-height: 10vh;
+  color: #fff;
+  background-color: #2B2B2B;
+  text-align: center;
+}
+
+/* NAVIGATION  ***********************************************/
+
+nav {
+  width: 100%;
+  min-height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 33px;
+  color: #2B2B2B;
+  text-transform: uppercase;
+  display: none;
+}
+
+nav > ul {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 0 20px;
+  text-align: center;
+  width: 20%;
+}
+
+nav ul li a {
+  color: #2B2B2B;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #2B2B2B;
+}
+
+.bouton-menu {
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  padding-right: 1rem;
+}
+
+.bouton-menu span {
+  color: #fff;
+}
+
+#click {
+  display: none;
+}
+
+/* Sous menu */
+
+nav li:hover .sous-menu {
+  display: block;
+}
+
+.sous-menu {
+  display: none;
+  line-height: 30px;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.sous-menu li {
+  width: 100%;
+  display: block;
+  margin: 20px;
+  text-align: left;
+}
+
+
+/* PIED DE PAGE ******************************************/
+
+
+body > footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3rem 0;
+}
+
+body > footer > div {
+  display: flex;
+}
+
+body > footer > div > * {
+  flex-basis: calc(100% / 3 - 3rem);
+  margin-right: 3rem;
+  padding: 0 2rem;
+} 
+
+/* footer section.apropos > div {
+  display: flex;
+  justify-content: space-between;
+} */
+
+footer section.dons > .grille > * {
+  flex-basis: calc(100% / 3 - 2rem);
+  margin-right: 2rem;
+  flex-wrap: wrap;
+}
+
+footer section.dons .bouton {
+  font-size: 1rem;
+  background-color:#ffff;
+  padding: 1rem 1rem;
+  min-width: 6rem;
+  border-radius: 2px;
+  color : #606C38;
+  justify-content: space-between;
+  margin-top : 2rem
+}
+
+footer section.dons .bouton:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* PAGE ACCUEIL - CAROUSSEL ***********************************/
+
+.caroussel {
+  position: relative;
+}
+
+.caroussel > img {
+  margin-top: 0;
+}
+
+
+/* PAGE ACCUEIL - SECTION MEMBRE *************************/
+
+.membre > .grille > .fiche {
+  justify-content: space-between;
+  align-items: stretch;
+  height: 8rem;
+  padding: 2rem 1rem 4rem 1rem;
+  width: 100%;
+}
+
+.fiche h3 {
+  /* padding: 2rem; */
+  font-size: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Danny modif */
+.membre .fiche  a {
+  max-width: 16rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grilleFiche .fiche{
+  width: 100%;
+}
+
+.grilleFiche .fiche:last-child{
+  padding: 0 0 2rem 0;
+  position: relative;
+}
+
+.grilleFiche   .fiche:last-child .bouton{
+  position: absolute;
+  bottom: 2rem;
+}
+
+.grilleFiche  > .fiche  p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.ensavoir-plus > .grille > article p {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+article:hover img {
+  filter: invert(20%);
+}
+
+article:hover {
+  cursor: pointer;
+}
+
+footer section > h2 {
+  border: none;
+}

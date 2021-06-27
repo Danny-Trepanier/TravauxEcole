@@ -1,0 +1,154 @@
+/*
+Palette de couleur
+https://coolors.co/212738-c71b00-4caf50-7776bc-f9f4f5
+======================
+#212738     Raisin black
+#c71b00     Bittersweet
+#4CAF50     Green Pantone
+#7776BC     Violet blue crayola
+#F9F4F5     snow
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%; /*16px*/
+}
+
+body {
+    background-color: #F9F4F5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #212738;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small, .text_small {
+    font-size: 0.8rem;
+}
+
+.erreur span {
+    color: #c71b00;
+}
+
+header {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+footer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    text-align: center;
+}
+
+input[type=text] {
+    background-color: #ffffff;
+    border: 2px solid #4CAF50;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: #212738;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: #212738;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.voitures {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.voitures td, .voitures th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.voitures td {
+    text-align: center;
+}
+  
+.voitures tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+.voitures tr:hover {
+    background-color: #ddd;
+}
+  
+.voitures th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #212738;
+}
